@@ -1,0 +1,19 @@
+navbar-brand {
+    font-size: 24px;
+    color: forestGreen;
+  }
+  
+  .profile-link {
+    border: 2px solid forestGreen; 
+    color: white !important; 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    text-decoration: none; 
+    background-color: forestGreen; 
+    display: inline-block; 
+  }
+  
+  .profile-link {
+    background-color: darkGreen !important;
+  }
+    
