@@ -1,0 +1,273 @@
+#main-container {
+    background-color: #fbf1ee;
+  }
+  
+  .macro-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .top-left-image-container {
+    position: absolute;
+    background-image: url("https://i.ibb.co/kGQmpfY/orange-1.png");
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 46%;
+    background-size: cover;
+    margin-left: -105px;
+  }
+  
+  .bottom-right-image-container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+    margin-right: -240px;
+    background-image: url("https://i.ibb.co/YR7szfz/lemon.png");
+    background-size: cover;
+    /* z-index: -1; */
+  }
+  .bottom-left-image-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 39%;
+    height: 29%;
+    margin-left: -170px;
+    background-image: url("https://i.ibb.co/w6Vr0WY/lime-1.png");
+    background-size: cover;
+    /* z-index: -1; */
+  }
+  
+  .macros-info-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #2e8540;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .total-calories-container {
+    text-align: center;
+  }
+  
+  .total-calories-circle {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #2e8540;
+    color: white;
+    font-size: 48px;
+    line-height: 200px;
+    margin-bottom: 10px;
+  }
+  
+  .section {
+    flex: 1;
+    margin: 0 10px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .section:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #2e8540; /* Rich green */
+    font-family: "Arial", sans-serif;
+  }
+  
+  .meal-container {
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .meal-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #2e8540; /* Rich green */
+  }
+  
+  .food-item input {
+    margin-right: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 8px 15px;
+    width: 100%;
+  }
+  
+  .food-item button,
+  .modal-footer button {
+    border: none;
+    background-color: #2e8540;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .food-item button:hover,
+  .modal-footer button:hover {
+    background-color: #1d5d24;
+  }
+  
+  .list-group-item {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+  
+  #total-calories,
+  .meal-icon,
+  .meal-info,
+  .meal-details {
+    color: #2e8540;
+  }
+  
+  .no-bullets {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .meal-type-row {
+    margin-bottom: 10px;
+  }
+  
+  .meal-type-button {
+    width: 100%;
+    background-color: #2e8540;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .meal-type-button:hover {
+    background-color: #1d5d24;
+  }
+  
+  .meal-type-button .icon {
+    font-size: 34px; /* Adjust the font size as desired */
+  }
+  
+  .meal-details-container {
+    margin-top: 10px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .list-group-item {
+    background-color: transparent;
+    border-bottom: 1px solid #ddd;
+    padding: 5px;
+  }
+  
+  .list-group-item:last-child {
+    border-bottom: none;
+  }
+  
+  .btn-salmon {
+    background-color: salmon;
+    color: white;
+  }
+  
+  .btn-salmon:hover {
+    background-color: darksalmon;
+  }
+  
+  .salmon-button {
+    background-color: salmon;
+    color: white;
+    margin-top: 10px;
+  }
+  
+  .salmon-button:hover {
+    background-color: darksalmon;
+  }
+  
+  .react-calendar {
+    width: 100%;
+    max-width: 350px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  .react-calendar__navigation button {
+    color: #2e8540;
+    min-width: 44px;
+    background: none;
+    font-size: 16px;
+  }
+  
+  .react-calendar__navigation button:enabled:hover,
+  .react-calendar__navigation button:enabled:focus {
+    background-color: #e6e6e6;
+  }
+  
+  .react-calendar__month-view__days__day--weekend {
+    color: #d10000;
+  }
+  
+  .react-calendar__tile:enabled:hover,
+  .react-calendar__tile:enabled:focus {
+    background: #e6e6e6;
+    color: #2e8540;
+    border-radius: 8px;
+  }
+  
+  .react-calendar__tile--active {
+    background: #2e8540;
+    color: white;
+    border-radius: 8px;
+  }
+  .water-tracker-section {
+    flex: 1;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .water-tracker-section:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
