@@ -34,8 +34,6 @@ export default function Signup() {
     <div className="container text-center signup-page">
       <div className="header-container">
         <HeaderSignup />
-        {/* <h1>Join Us</h1>
-        <p>{currentText}</p> */}
       </div>
       <div className="signup-container">
         <div className="signup-content">
