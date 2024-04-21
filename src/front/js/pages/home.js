@@ -1,26 +1,29 @@
-import React, { useContext } from "react";
-import { Context } from "../store/appContext";
-import rigoImageUrl from "../../img/rigo-baby.jpg";
-import "../../styles/home.css";
+import React from "react";
+import "../../styles/hero.css";
+import { Link } from "react-router-dom";
+import nourishNav from "../../img/nourishNav.gif";
 
-export const Home = () => {
-	const { store, actions } = useContext(Context);
-
-	return (
-		<div className="text-center mt-5">
-			<h1>Hello Rigo!!</h1>
-			<p>
-				<img src={rigoImageUrl} />
-			</p>
-			<div className="alert alert-info">
-				{store.message || "Loading message from the backend (make sure your python backend is running)..."}
-			</div>
-			<p>
-				This boilerplate comes with lots of documentation:{" "}
-				<a href="https://start.4geeksacademy.com/starters/react-flask">
-					Read documentation
-				</a>
-			</p>
-		</div>
-	);
+const HeroSection = () => {
+    return (
+        <div className="hero">
+            <div></div>
+            <div className="hero-background"></div>
+            <div className="hero-overlay"></div>
+            <div className="hero-content">
+                <h5 className="banner-title">
+                    Discover Healthier Living with NourishNav
+                </h5>
+                <p className="banner-text">Track Your Macros, Elevate Your Health!</p>
+                <Link to="/signup" className="btn">
+                    Sign Up
+                </Link>
+            </div>
+            {/* container for nourishNav logo */}
+            <div className="hero-gif">
+                <img src={nourishNav} alt="nourishNav Logo" />
+            </div>
+        </div>
+    );
 };
+
+export default HeroSection;
