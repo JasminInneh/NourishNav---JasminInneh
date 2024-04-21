@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../styles/macroTracker.css";
-import { Macrotrackerapi } from "../component/macrotrackerapi";
+import { Macrotrackerapi } from "./macrotrackerapi";
 import Calendar from "react-calendar";
 import { format } from "date-fns";
 import { WaterTracker } from "./WaterTracker";
